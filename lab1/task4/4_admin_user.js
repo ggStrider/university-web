@@ -1,6 +1,6 @@
-const ADMIN_USERNAME = "ADMIN";
+const ADMIN_USERNAME = "admin";
 
-let inputUserName = prompt("Input your username:");
+let inputUserName = prompt("Input your username:").toLowerCase();
 
 if(inputUserName == ADMIN_USERNAME)
 {
