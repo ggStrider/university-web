@@ -21,10 +21,20 @@ function printPropertiesOfMyClass(obj)
     console.log(obj.LastName);
 }
 
+function printPropertyiesOfMyClassByKey(obj) {
+    if(!(obj instanceof MyClass)) {
+        throw new Error("Function can use only " + MyClass.name)
+    }
+
+    for (let key in obj) {
+        console.log(key + ": " + obj[key]);
+    }
+}
+
 let myObject1 = new MyClass("1Name", "1LastName");
 let myObject2 = new MyClass("2Name", "2LastName");
 let myObject3 = new MyClass("3Name", "3LastName");
 
-printPropertiesOfMyClass(myObject1);
+printPropertyiesOfMyClassByKey(myObject1);
 printPropertiesOfMyClass(myObject2);
 printPropertiesOfMyClass(myObject3);
