@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+
+  <form id="contactForm" novalidate>
+    <label>
+      Your Name:
+      <input type="text" id="name" name="name">
+      <div class="error" id="nameError"></div>
+    </label>
+    <br>
+
+    <label>
+      Age:
+      <input type="number" id="age" name="age">
+      <div class="error" id="ageError"></div>
+    </label>
+    <br>
+
+    <label>
+      E-Mail:
+      <input type="email" id="email" name="email">
+      <div class="error" id="emailError"></div>
+    </label>
+    <br>
+
+    <label>
+      Your Website:
+      <input type="url" id="website" name="website">
+      <div class="error" id="websiteError"></div>
+    </label>
+    <br>
+
+    <label>
+      Your Message:
+      <textarea id="message" name="message"></textarea>
+      <div class="error" id="messageError"></div>
+    </label>
+    <br>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <script src="4_form.js"></script>
+</body>
+
+</html>
