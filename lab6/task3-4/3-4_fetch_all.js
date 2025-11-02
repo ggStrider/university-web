@@ -23,11 +23,12 @@ const users = [new User("Mykola", 1), new User("Olena", 2), new User("Stepan", 3
 
 async function fetchAllUsers() {
 
+    await waitForSeconds(3);
+
     if(users.length == 0) {
         throw "No users in data base!";
     }
 
-    await waitForSeconds(3);
     return users;
 }
 

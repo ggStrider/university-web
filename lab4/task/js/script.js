@@ -27,7 +27,8 @@ const dataSite = {
     proSoft: [
         "Firewall",
         "Antivirus",
-        "VPN"
+        "VPN",
+        "Bread"
     ],
     whyUs: [
         "High quality",
